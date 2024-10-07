@@ -9,3 +9,20 @@ if ('serviceWorker' in navigator) {
             });
     });
 }
+
+function calculate(){
+    const a =document.getElementById("a").value;
+    const b =document.getElementById("b").value;
+    const c =document.getElementById("c").value;
+    let res;
+    let disc = (b * b)-(4*a*c);
+    if(disc >= 0){
+        res1 = -b + Math.sqrt(disc) / (2 * a);
+        res2 = -b - Math.sqrt(disc) / (2 * a);
+    }
+    else{
+        res="nelze"
+    }
+
+
+}
